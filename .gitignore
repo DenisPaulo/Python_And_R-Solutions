@@ -1,0 +1,7 @@
+# Arquivos gerados automaticamente pelo Python
+dados_farmtech.json
+dados_farmtech.csv
+
+# Python cache
+__pycache__/
+*.pyc
