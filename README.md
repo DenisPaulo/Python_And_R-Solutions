@@ -1,71 +1,74 @@
-# FarmTech Solutions - Agricultura Digital
+# FarmTech Solutions — Agricultura Digital
 
-Projeto da startup **FarmTech Solutions** para gestao de culturas agricolas usando Python e R.
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)](https://www.r-project.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+Aplicação da startup **FarmTech Solutions** para gestão de culturas agrícolas com **Python** (CRUD + insumos) e **R** (estatística + clima).
 
 ## Estrutura do Projeto
 
 ```
-farmtech-solutions/
-  farmtech.py          # Aplicacao principal em Python
-  estatisticas.R       # Analise estatistica em R (media, desvio padrao)
-  clima.R              # Consulta de API meteorologica em R (bonus)
-  dados_farmtech.csv   # Dados exportados pelo Python (gerado automaticamente)
-  dados_farmtech.json  # Dados persistidos pelo Python (gerado automaticamente)
-  README.md            # Este arquivo
+Python_And_R-Solutions/
+├── farmtech.py        # Aplicação principal em Python
+├── estatisticas.R     # Análise estatística em R (média, desvio padrão)
+├── clima.R            # Consulta de API meteorológica em R (bônus)
+├── dados_farmtech.csv # Exportado pelo Python (gerado automaticamente)
+├── dados_farmtech.json
+├── README.md
+└── LICENSE
 ```
 
 ## Culturas Suportadas
 
-| Cultura | Figura Geometrica | Insumo    | Unidade       |
-|---------|-------------------|-----------|---------------|
-| Cafe    | Retangulo         | Fosfato   | mL/metro      |
-| Milho   | Circulo (pivo)    | Herbicida | L/hectare     |
+| Cultura | Figura geométrica | Insumo    | Unidade   |
+|---------|-------------------|-----------|-----------|
+| Café    | Retângulo         | Fosfato   | mL/metro  |
+| Milho   | Círculo (pivô)    | Herbicida | L/hectare |
 
-## Como Executar
+## Como executar
 
-### 1. Python - Aplicacao Principal
+### 1. Python — aplicação principal
 
 ```bash
 python3 farmtech.py
 ```
 
-O programa apresenta um menu interativo com as opcoes:
-1. **Entrada de dados** - cadastrar nova area de plantio e calcular insumos
-2. **Saida de dados** - exibir todos os registros cadastrados
-3. **Atualizar dados** - modificar um registro existente
-4. **Deletar dados** - remover um registro
-5. **Exportar CSV para R** - gerar arquivo CSV para analise em R
-6. **Sair do programa**
+Menu interativo:
+1. **Entrada de dados** — cadastrar área de plantio e calcular insumos
+2. **Saída de dados** — listar registros
+3. **Atualizar dados** — modificar um registro
+4. **Deletar dados** — remover um registro
+5. **Exportar CSV para R** — gerar arquivo para análise
+6. **Sair**
 
-### 2. R - Analise Estatistica
+### 2. R — análise estatística
 
-Primeiro, execute o programa Python e cadastre alguns registros. Depois:
+Cadastre alguns registros no Python e depois:
 
 ```bash
 Rscript estatisticas.R
 ```
 
-O script calcula:
-- Media e desvio padrao das areas plantadas
-- Media e desvio padrao das quantidades de insumo
-- Estatisticas separadas por cultura (cafe e milho)
+Calcula média e desvio padrão de áreas e insumos, separados por cultura.
 
-### 3. R - Dados Climaticos (Ir Alem)
+### 3. R — dados climáticos (Ir Além)
 
 ```bash
 Rscript clima.R
 ```
 
-Conecta-se a API publica **Open-Meteo** (sem necessidade de chave) para:
-- Exibir clima atual de cidades brasileiras
-- Previsao de 7 dias (temperatura e chuva)
-- Estatisticas da previsao (media e desvio padrao)
+Usa a API pública **Open-Meteo** (sem chave) para clima atual, previsão de 7 dias e estatísticas.
 
 ## Requisitos
 
 - **Python 3.x** (sem bibliotecas externas)
-- **R** com pacotes `httr` e `jsonlite` (instalados automaticamente pelo script clima.R)
+- **R** com pacotes `httr` e `jsonlite` (o script `clima.R` instala se necessário)
 
-## Equipe
+## Licença
 
-Projeto desenvolvido como atividade academica - FarmTech Solutions.
+Distribuído sob a licença [MIT](LICENSE).
+
+---
+
+Projeto acadêmico — FarmTech Solutions · [Denis Paulo](https://github.com/DenisPaulo)
