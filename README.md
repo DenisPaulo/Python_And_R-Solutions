@@ -6,6 +6,10 @@
 
 Aplicação da startup **FarmTech Solutions** para gestão de culturas agrícolas com **Python** (CRUD + insumos) e **R** (estatística + clima).
 
+## Resultado
+
+Gestão de culturas em terminal: Python faz CRUD e cálculo de insumos (café/milho); R calcula estatísticas e consulta clima via Open-Meteo.
+
 ## Estrutura do Projeto
 
 ```
