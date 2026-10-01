@@ -13,7 +13,7 @@ Gestão de culturas em terminal: Python faz CRUD e cálculo de insumos (café/mi
 ## Estrutura do Projeto
 
 ```
-Python_And_R-Solutions/
+python-and-r-solutions/
 ├── farmtech.py        # Aplicação principal em Python
 ├── estatisticas.R     # Análise estatística em R (média, desvio padrão)
 ├── clima.R            # Consulta de API meteorológica em R (bônus)
