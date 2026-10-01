@@ -17,11 +17,12 @@ Python_And_R-Solutions/
 ├── farmtech.py        # Aplicação principal em Python
 ├── estatisticas.R     # Análise estatística em R (média, desvio padrão)
 ├── clima.R            # Consulta de API meteorológica em R (bônus)
-├── dados_farmtech.csv # Exportado pelo Python (gerado automaticamente)
-├── dados_farmtech.json
+├── .gitignore
 ├── README.md
 └── LICENSE
 ```
+
+> Os arquivos `dados_farmtech.csv` e `dados_farmtech.json` **não são versionados** (estão no `.gitignore`): são gerados automaticamente ao rodar `farmtech.py` (o CSV pela opção 5 do menu, para uso no R).
 
 ## Culturas Suportadas
 
